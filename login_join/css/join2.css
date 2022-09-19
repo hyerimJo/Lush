@@ -186,21 +186,15 @@ a {
   background-size: cover;
 }
 .contents .contents_in {
-  margin: 0 auto;
+  padding-top: 90px;
   height: 1150px;
-  position: relative;
-  left: 50%;
-  margin-left: -800px;
 }
 .contents .contents_in .joinus {
-  position: absolute;
-  top: 80px;
-  left: 721px;
+  text-align: center;
 }
 .contents .contents_in .agree {
-  position: absolute;
-  top: 130px;
-  left: 654px;
+  margin: 20px auto;
+  text-align: center;
   font-size: 20px;
   font-family: "Nanum Gothic", sans-serif;
   font-weight: bold;
@@ -209,21 +203,18 @@ a {
   color: rgb(130, 130, 130);
 }
 .contents .contents_in .box1 {
-  width: 898px;
+  width: 45%;
   height: 849px;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 55%;
-  left: 32%;
   padding-top: 40px;
 }
 .contents .contents_in .c_header {
-  margin-left: 35px;
+  margin-left: 40px;
 }
 .contents .contents_in .need {
-  margin: 20px 0 0 35px;
+  margin: 20px 0 0 40px;
 }
 .contents .contents_in .star {
   color: red;
@@ -238,7 +229,7 @@ a {
   height: 25px;
 }
 .contents .contents_in table {
-  margin: 20px 0 0 35px;
+  margin: 20px 0 0 40px;
   width: 825px;
   height: 652px;
 }
