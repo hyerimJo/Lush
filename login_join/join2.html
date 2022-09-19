@@ -8,6 +8,20 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic:wght@400;800&family=Smokum&display=swap"
       rel="stylesheet"
     />
+    <script src="../mainjs/jquery-3.4.1.min.js"></script>
+    <script>
+      $(function () {
+        $(".header_menu .m").on("mouseover focus", function () {
+          $(".header_menu").stop().animate({ height: "320px" }, 500);
+          $(".submenu").fadeIn(500);
+        });
+
+        $(".header_menu").on("mouseleave blur", function () {
+          $(".header_menu").animate({ height: "48px" }, 500);
+          $(".submenu").fadeOut(500);
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="wrap">
@@ -18,7 +32,7 @@
             <li>/</li>
             <li><a href="../login_join/login.html">Login</a></li>
             <li>/</li>
-            <li><a href="">Cart</a></li>
+            <li><a href="#">Cart</a></li>
           </ul>
         </div>
         <!--header_login/-->
@@ -26,28 +40,161 @@
         <div class="header_logo">
           <h1>
             <a href="../index.html"
-              ><img src="../common/images/LUSH2.gif" alt="logo"
+              ><img src="../common/images/logo.png" alt="logo"
             /></a>
           </h1>
         </div>
         <!--header_logo/-->
 
         <div class="header_menu">
-          <div class="menu">
-            <h2>
-              <a href="#"
-                ><img src="../common/images/menubar.gif" alt="menubar"
-              /></a>
-            </h2>
-            <ul>
-              <li><a href="../sub.html">제품</a></li>
-              <li><a href="#">스파</a></li>
-              <li><a href="#">이벤트</a></li>
-              <li><a href="#">러쉬소개</a></li>
-              <li><a href="#">매장안내</a></li>
+          <nav class="nav">
+            <ul class="gnb">
+              <li class="m">
+                <a href="#"
+                  ><img src="../common/images/menubar.gif" alt=""
+                /></a>
+              </li>
+              <li class="m">
+                <a href="../sub.html">BEST<span class="line l1"></span></a>
+              </li>
+              <li class="m">
+                <a href="../sub2.html">NEW<span class="line l2"></span></a>
+              </li>
+              <li class="m">
+                <a href="#">제품<span class="line l3"></span></a>
+              </li>
+              <li class="m">
+                <a href="#">스파<span class="line l4"></span></a>
+              </li>
+              <li class="m">
+                <a href="#">러쉬소개<span class="line l5"></span></a>
+              </li>
+              <li class="m">
+                <a href="#">매장안내<span class="line l6"></span></a>
+              </li>
+              <li class="m">
+                <a href="#">이벤트<span class="line l7"></span></a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="submenu">
+            <ul class="sub sub1">
+              <li class="s1-1">
+                <a href="#">주간 베스트<span class="s_circle"></span></a>
+              </li>
+              <li class="s1-2">
+                <a href="#">별 다섯개 후기<span class="s_circle"></span></a>
+              </li>
+              <li class="s1-3">
+                <a href="#">온라인 전용<span class="s_circle"></span></a>
+              </li>
+              <li class="s1-4">
+                <a href="#">국내 제조<span class="s_circle"></span></a>
+              </li>
+              <li class="s1-5">
+                <a href="#">네이키드<span class="s_circle"></span></a>
+              </li>
+              <li class="s1-6">
+                <a href="#">선물 고수 되기<span class="s_circle"></span></a>
+              </li>
+            </ul>
+
+            <ul class="sub sub2">
+              <li class="s2-1">
+                <a href="#">베쓰밤<span class="s_circle"></span></a>
+              </li>
+              <li class="s2-2">
+                <a href="#">발렌타인<span class="s_circle"></span></a>
+              </li>
+              <li class="s2-3">
+                <a href="#">버블바 큐레이션<span class="s_circle"></span></a>
+              </li>
+              <li class="s2-4">
+                <a href="#">비건 메이크업<span class="s_circle"></span></a>
+              </li>
+              <li class="s2-5">
+                <a href="#">메이크업<span class="s_circle"></span></a>
+              </li>
+            </ul>
+
+            <ul class="sub sub3">
+              <li class="s3-1">
+                <a href="#">베쓰<span class="s_circle"></span></a>
+              </li>
+              <li class="s3-2">
+                <a href="#">샤워<span class="s_circle"></span></a>
+              </li>
+              <li class="s3-3">
+                <a href="#">보디<span class="s_circle"></span></a>
+              </li>
+              <li class="s3-4">
+                <a href="#">페이스<span class="s_circle"></span></a>
+              </li>
+              <li class="s3-5">
+                <a href="#">헤어<span class="s_circle"></span></a>
+              </li>
+              <li class="s3-6">
+                <a href="#">메이크업<span class="s_circle"></span></a>
+              </li>
+              <li class="s3-7">
+                <a href="#">퍼퓸<span class="s_circle"></span></a>
+              </li>
+            </ul>
+
+            <ul class="sub sub4">
+              <li class="s4-1">
+                <a href="#">스파 트리트먼트<span class="s_circle"></span></a>
+              </li>
+              <li class="s4-2">
+                <a href="#">압구정점<span class="s_circle"></span></a>
+              </li>
+              <li class="s4-3">
+                <a href="#">경리단길점<span class="s_circle"></span></a>
+              </li>
+              <li class="s4-4">
+                <a href="#"
+                  >스파 바우처 사용방법<span class="s_circle"></span
+                ></a>
+              </li>
+            </ul>
+
+            <ul class="sub sub5">
+              <li class="s5-1">
+                <a href="#">러쉬소개<span class="s_circle"></span></a>
+              </li>
+              <li class="s5-2">
+                <a href="#">러쉬 이야기<span class="s_circle"></span></a>
+              </li>
+              <li class="s5-3">
+                <a href="#">체러티 팟<span class="s_circle"></span></a>
+              </li>
+              <li class="s5-4">
+                <a href="#">커뮤니티<span class="s_circle"></span></a>
+              </li>
+              <li class="s5-5">
+                <a href="#">서명 캠페인<span class="s_circle"></span></a>
+              </li>
+              <li class="s5-6">
+                <a href="#">기업 선물<span class="s_circle"></span></a>
+              </li>
+            </ul>
+
+            <ul class="sub sub6"></ul>
+
+            <ul class="sub sub7">
+              <li class="s7-1">
+                <a href="#">진행중 이벤트<span class="s_circle"></span></a>
+              </li>
+              <li class="s7-2">
+                <a href="#">선정자 발표<span class="s_circle"></span></a>
+              </li>
+              <li class="s7-3">
+                <a href="#">종료된 이벤트<span class="s_circle"></span></a>
+              </li>
             </ul>
           </div>
-          <!--menu/-->
+          <!--submenu/-->
         </div>
         <!--header_menu/-->
       </div>
@@ -65,124 +212,131 @@
               > 가입완료</span
             >
           </p>
-          <p class="box1"></p>
-          <p class="c_header">
-            <img src="images/기본정보.gif" alt="기본정보" />
-          </p>
-          <p class="need">
-            <span class="star">*</span> 표시는 반드시 입력하셔야하는 항목입니다.
-          </p>
 
-          <table>
-            <tr>
-              <th><span class="star">*</span> 아이디</th>
-              <td>
-                <input
-                  type="text"
-                  class="text"
-                  placeholder="아이디를 입력하세요."
-                />
-                <input type="submit" value="중복검사" class="submit" />
-              </td>
-            </tr>
-            <tr>
-              <th><span class="star">*</span> 비밀번호</th>
-              <td>
-                <input
-                  type="password"
-                  class="text"
-                  placeholder=" 비밀번호를 입력하세요."
-                />
-                5~12자로 영문, 숫자, 특수기호 모두 포함하세요.
-              </td>
-            </tr>
-            <tr>
-              <th><span class="star">*</span> 비밀번호 확인</th>
-              <td>
-                <input
-                  type="password"
-                  class="text"
-                  placeholder=" 비밀번호를 재입력하세요."
-                />
-              </td>
-            </tr>
-            <tr>
-              <th><span class="star">*</span> 이름</th>
-              <td>
-                <input
-                  type="text"
-                  class="text"
-                  placeholder=" 이름을 입력하세요."
-                />
-              </td>
-            </tr>
-            <tr>
-              <th>&nbsp;&nbsp; 닉네임</th>
-              <td>
-                <input
-                  type="text"
-                  class="text"
-                  placeholder=" 닉네임을 입력하세요."
-                />
-              </td>
-            </tr>
-            <tr>
-              <th><span class="star">*</span> 이메일</th>
-              <td>
-                <input
-                  type="text"
-                  class="text"
-                  placeholder=" 이메일을 입력하세요."
-                />
-                <select class="select">
-                  <option>직접입력</option>
-                  <option>@naver.com</option>
-                  <option>@nate.com</option>
-                  <option>@gmail.com</option>
-                  <option>@daum.net</option>
-                </select>
-                <input type="checkbox" /> 정보/이메일 메일 수신에 동의합니다.
-              </td>
-            </tr>
-            <tr>
-              <th><span class="star">*</span> 휴대전화</th>
-              <td>
-                <input
-                  type="text"
-                  class="text"
-                  placeholder=" 휴대전화를 입력하세요."
-                />
-                <input type="checkbox" /> 정보/이메일 SNS 수신에 동의합니다.
-              </td>
-            </tr>
-            <tr>
-              <th>&nbsp;&nbsp; 주소</th>
-              <td>
-                <input
-                  type="text"
-                  class="text"
-                  placeholder=" 주소를 입력하세요."
-                />
-                <input
-                  type="submit"
-                  value="우편번호검색"
-                  class="submit"
-                /><br /><br />
-                <input
-                  type="text"
-                  class="text"
-                  placeholder=" 상세 주소를 입력하세요."
-                />
-                <input type="text" class="text" />
-              </td>
-            </tr>
-          </table>
+          <div class="box1">
+            <div class="c_header">
+              <img src="images/기본정보.gif" alt="기본정보" />
+            </div>
+            <div class="need">
+              <span class="star">*</span> 표시는 반드시 입력하셔야하는
+              항목입니다.
+            </div>
 
-          <p class="btn_joinus">
-            <a href="join3.html"
-              ><img src="images/회원가입.gif" alt="회원가입"
-            /></a>
-          </p>
+            <div class="table">
+              <table>
+                <tr>
+                  <th><span class="star">*</span> 아이디</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="text"
+                      placeholder="아이디를 입력하세요."
+                    />
+                    <input type="submit" value="중복검사" class="submit" />
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="star">*</span> 비밀번호</th>
+                  <td>
+                    <input
+                      type="password"
+                      class="text"
+                      placeholder=" 비밀번호를 입력하세요."
+                    />
+                    5~12자로 영문, 숫자, 특수기호 모두 포함하세요.
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="star">*</span> 비밀번호 확인</th>
+                  <td>
+                    <input
+                      type="password"
+                      class="text"
+                      placeholder=" 비밀번호를 재입력하세요."
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="star">*</span> 이름</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="text"
+                      placeholder=" 이름을 입력하세요."
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>&nbsp;&nbsp; 닉네임</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="text"
+                      placeholder=" 닉네임을 입력하세요."
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="star">*</span> 이메일</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="text"
+                      placeholder=" 이메일을 입력하세요."
+                    />
+                    <select class="select">
+                      <option>직접입력</option>
+                      <option>@naver.com</option>
+                      <option>@nate.com</option>
+                      <option>@gmail.com</option>
+                      <option>@daum.net</option>
+                    </select>
+                    <input type="checkbox" /> 정보/이메일 메일 수신에
+                    동의합니다.
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="star">*</span> 휴대전화</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="text"
+                      placeholder=" 휴대전화를 입력하세요."
+                    />
+                    <input type="checkbox" /> 정보/이메일 SNS 수신에 동의합니다.
+                  </td>
+                </tr>
+                <tr>
+                  <th>&nbsp;&nbsp; 주소</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="text"
+                      placeholder=" 주소를 입력하세요."
+                    />
+                    <input
+                      type="submit"
+                      value="우편번호검색"
+                      class="submit"
+                    /><br /><br />
+                    <input
+                      type="text"
+                      class="text"
+                      placeholder=" 상세 주소를 입력하세요."
+                    />
+                    <input type="text" class="text" />
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="btn_joinus">
+              <a href="join3.html"
+                ><img src="images/회원가입.gif" alt="회원가입"
+              /></a>
+            </div>
+          </div>
+          <!--box1/-->
         </div>
         <!--contents_in-->
       </div>
@@ -204,7 +358,9 @@
         <div class="foot2">
           <div class="foot2_l">
             <p class="logo2">
-              <a href="#"><img src="common/images/LUSH.gif" alt="logo2" /></a>
+              <a href="#"
+                ><img src="../common/images/LUSH.gif" alt="logo2"
+              /></a>
             </p>
             <ul class="f_l_list">
               <li class="number">고객센터 1644~2357</li>
@@ -257,27 +413,27 @@
             <ul class="f_r_sns">
               <li>
                 <a href="#"
-                  ><img src="common/images/facebook.gif" alt="facebook"
+                  ><img src="../common/images/facebook.gif" alt="facebook"
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="common/images/instagram.gif" alt="instagram"
+                  ><img src="../common/images/instagram.gif" alt="instagram"
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="common/images/youtube.gif" alt="youtube"
+                  ><img src="../common/images/youtube.gif" alt="youtube"
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="common/images/kakaoplus.gif" alt="kakaoplus"
+                  ><img src="../common/images/kakaoplus.gif" alt="kakaoplus"
                 /></a>
               </li>
               <li>
                 <a href="#"
-                  ><img src="common/images/naver.gif" alt="naver"
+                  ><img src="../common/images/naver.gif" alt="naver"
                 /></a>
               </li>
             </ul>
@@ -289,7 +445,7 @@
       <!--footer/-->
       <p class="top_w">
         <a class="Top" href="javascript:window.scrollTo(0,0);"
-          ><img src="images/up.gif" alt="gotop"
+          ><img src="../images/up.gif" alt="gotop"
         /></a>
       </p>
     </div>
